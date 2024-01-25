@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Classification with PyScript</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+
+<body>
+    <h1>Text Classification</h1>
+
+    <!-- Text input for user to enter content -->
+    <textarea id="user-input" rows="4" cols="50" placeholder="Type your content here..."></textarea><br />
+
+    <!-- Button for making predictions -->
+    <button onclick="makePrediction()">Classify Text</button>
+
+    <!-- Area to display the prediction result -->
+    <h2>Prediction:</h2>
+    <div id="prediction-result">Result will be displayed here</div>
+
+    <py-script src="./node.py"></py-script>
+</body>
+
+</html>
